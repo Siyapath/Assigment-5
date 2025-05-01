@@ -1,5 +1,4 @@
-/* RegisterView.css */
-
+/* General Reset */
 body, html, #root {
   margin: 0;
   padding: 0;
@@ -7,6 +6,7 @@ body, html, #root {
   width: 100%;
 }
 
+/* Main container for the registration view */
 .register-view {
   position: fixed;
   top: 0;
@@ -16,55 +16,82 @@ body, html, #root {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #19997f;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* Soft light background */
+  font-family: 'Arial', sans-serif;
   z-index: 1000;
 }
 
+/* Form container with more spacious layout */
 .register-view form {
-  background-color: #72cfb3;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for the form */
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
+/* Heading style */
 .register-view h2 {
   text-align: center;
-  margin-bottom: 25px;
-  color: #333333;
-  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2d3e50; /* Darker gray for the heading */
+  font-size: 30px;
 }
 
+/* Input field styles */
 .register-view input {
-  margin-bottom: 15px;
-  padding: 12px;
+  margin-bottom: 20px;
+  padding: 14px;
   font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #7e4545;
+  border-radius: 10px;
+  border: 1px solid #ccd6f6; /* Soft border color */
   transition: border-color 0.3s ease;
 }
 
+/* Focus effect for input fields */
 .register-view input:focus {
-  border-color: #007bff;
+  border-color: #3b82f6; /* Blue border color on focus */
   outline: none;
 }
 
+/* Button styles */
 .register-view button {
-  padding: 12px;
+  padding: 14px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #3b82f6; /* Bright blue background */
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+/* Hover effect for the button */
 .register-view button:hover {
-  background-color: #25e29a;
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .register-view form {
+    padding: 30px 25px;
+    max-width: 95%;
+  }
+
+  .register-view h2 {
+    font-size: 26px;
+  }
+
+  .register-view input {
+    font-size: 14px;
+  }
+
+  .register-view button {
+    font-size: 14px;
+  }
 }
