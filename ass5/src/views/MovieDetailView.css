@@ -1,6 +1,6 @@
-/* Main Container for Movie Detail View */
+
 .movie-detail-view {
-  background-color: #f4f4f4; /* Light background for the entire page */
+  background-color: #000000; 
   padding: 20px;
 }
 
@@ -10,29 +10,29 @@
   flex-direction: row;
   gap: 30px;
   padding: 40px;
-  background-color: #ffffff; /* White background for the content */
+  background-color: #dadada; 
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  max-width: 1200px; /* Ensure container doesn't stretch beyond this width */
-  margin: 40px auto; /* Center the container */
-  flex-wrap: wrap; /* Ensure content wraps if needed */
-  width: 100%; /* Ensure the container fills its parent */
-  box-sizing: border-box; /* Prevent overflow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  max-width: 1200px; 
+  margin: 40px auto; 
+  flex-wrap: wrap; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-/* Movie Poster */
+
 .movie-detail-poster {
   
-  width: 500px; /* Fixed width for poster */
-  height: 750px; /* Maintain aspect ratio */
+  width: 500px; 
+  height: 750px; 
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
-  margin: 0 auto; /* Center the image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto; 
 }
 
 .movie-detail-poster:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05); 
 }
 
 /* Movie Info Section */
@@ -42,42 +42,42 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 15px;
-  max-width: 700px; /* Ensure the text area has a max width */
+  max-width: 700px; 
 }
 
 .movie-detail-info h2 {
   font-size: 28px;
-  color: #333; /* Dark text color */
-  font-weight: 600; /* Bold title */
+  color: #333; 
+  font-weight: 9000; 
 }
 
 .movie-detail-info .overview {
   font-size: 16px;
-  color: #555; /* Lighter text for overview */
-  line-height: 1.8; /* Increased line height for readability */
+  color: #555; 
+  line-height: 1.8; 
 }
 
 .trailer {
   margin-top: 20px;
   font-size: 16px;
-  color: #007bff; /* Blue for trailer link */
+  color: #000000; 
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* Loading & Error Messages */
+
 .loading,
 .error-message {
   text-align: center;
   font-size: 18px;
   padding: 40px;
-  color: #888; /* Grey color */
+  color: #888; 
 }
 
 /* Back Button */
 .back-button {
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #000000;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -85,17 +85,17 @@
   font-size: 14px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  width: 75px; /* Fixed width for poster */
-  height: 75px; /* Maintain aspect ratio */
-  display: inline-block; /* Allow it to shrink but not stretch */
-  margin: 20px auto; /* Center the button horizontally */
+  width: 75px; 
+  height: 75px; 
+  display: inline-block; 
+  margin: 20px auto; 
 }
 
 .back-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #878a8d; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .movie-detail-container {
     flex-direction: column;
@@ -103,22 +103,16 @@
   }
 
   .movie-detail-poster {
-    width: 100%; /* Take full width on smaller screens */
-    max-width: 300px; /* Limit max width for smaller devices */
-    margin: 0 auto; /* Center the poster */
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto; 
   }
 
-  .movie-detail-info h2 {
-    font-size: 24px; /* Smaller title on mobile */
-  }
-
-  .movie-detail-info .overview {
-    font-size: 14px; /* Smaller text for overview */
-  }
+  
 
   .back-button {
-    font-size: 12px; /* Smaller back button text */
+    font-size: 15px; 
     padding: 6px 12px;
-    max-width: 120px; /* Limit width further on mobile */
+    max-width: 120px; 
   }
 }

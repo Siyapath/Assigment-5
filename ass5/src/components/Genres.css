@@ -1,19 +1,19 @@
-/* Genres Component Styling */
+
 .genres {
   padding: 20px;
-  background-color: #f9f9f9; /* Lighter background color for subtle contrast */
-  border-radius: 12px; /* Slightly rounded corners for a smoother look */
+  background-color: #fafafa; 
+  border-radius: 12px; 
   max-width: 320px;
-  margin: 20px auto; /* Center the genres container with margin */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a soft shadow for a clean look */
+  margin: 20px auto; 
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); 
 }
 
 .genres h3 {
   font-size: 1.6rem;
-  color: #333; /* Dark color for header */
-  font-weight: 600; /* Slightly bolder font weight */
+  color: #333; 
+  font-weight: 600; 
   text-align: center;
-  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  margin-bottom: 20px; 
 }
 
 .genres ul {
@@ -23,7 +23,7 @@
 }
 
 .genres li {
-  margin-bottom: 12px; /* Increase spacing between items */
+  margin-bottom: 12px; 
 }
 
 .genres a {
@@ -32,37 +32,30 @@
   text-decoration: none;
   display: block;
   padding: 12px;
-  border-radius: 8px; /* More rounded buttons */
+  border-radius: 8px; 
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: #ffffff; /* White background for each item */
-  border: 2px solid #ddd; /* Light border for items */
+  background-color: #ffffff; 
+  border: 2px solid #ddd; 
 }
 
 .genres a:hover {
-  background-color: #00bcd4;
+  background-color: #000000;
   color: #fff;
-  border-color: #00bcd4; /* Highlight border color when hovered */
+  border-color: #000000; 
 }
 
 .active-genre {
   background-color: #00bcd4;
   color: #fff;
-  border-color: #00bcd4; /* Consistent border color for active item */
+  border-color: #1295a7; 
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .genres {
     max-width: 100%;
     padding: 15px;
   }
 
-  .genres h3 {
-    font-size: 1.3rem; /* Slightly smaller font size for small screens */
-  }
-
-  .genres a {
-    font-size: 1rem;
-    padding: 10px; /* Adjust padding for mobile */
-  }
+ 
 }

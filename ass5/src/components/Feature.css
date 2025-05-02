@@ -1,4 +1,4 @@
-/* Feature.css */
+
 .feature-section {
   padding: 40px 20px;
   background-color: #f8f9fa;
@@ -45,14 +45,14 @@
   padding: 10px;
   font-size: 1rem;
   font-weight: 500;
-  color: #333;
+  color: #000000;
   margin-top: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* Optional: Add responsiveness */
+
 @media (max-width: 768px) {
   .feature-section {
     padding: 20px 10px;

@@ -4,8 +4,8 @@ import HomeView from './views/HomeView';
 import LoginView from './views/LoginView';
 import RegisterView from './views/RegisterView';
 import GenreView from './views/GenreView';
-import MovieDetailView from './views/MovieDetailView'; // ✅ Import MovieDetailView
-import ErrorView from './views/ErrorView'; // ✅ Import ErrorView
+import MovieDetailView from './views/MovieDetailView'; 
+import ErrorView from './views/ErrorView'; // 
 import { AuthContext } from './context/LoginRegContext';
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
           <Route path="/login" element={<LoginView />} />
           <Route path="/register" element={<RegisterView />} />
           <Route path="/genre/:id" element={<GenreView />} />
-          <Route path="/movie/:movieId" element={<MovieDetailView />} /> {/* ✅ Movie details */}
-          <Route path="*" element={<ErrorView />} /> {/* ✅ Catch-all route */}
+          <Route path="/movie/:movieId" element={<MovieDetailView />} /> 
+          <Route path="*" element={<ErrorView />} /> 
         </Routes>
       </Router>
     </AuthContext.Provider>

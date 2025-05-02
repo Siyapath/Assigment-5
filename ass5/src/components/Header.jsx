@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        <img className="logo" src="/images/hmm.png" alt="Logo" />
+        <img className="logo" src="https://static.vecteezy.com/system/resources/previews/012/627/815/non_2x/3d-popcorn-striped-bucket-cinema-snack-movie-entertainment-concept-high-quality-isolated-3d-render-free-png.png" alt="Logo" />
       </Link>
 
       {username && <h1>Welcome, {username}!</h1>}
