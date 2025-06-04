@@ -24,6 +24,7 @@
 
 .genres li {
   margin-bottom: 12px; 
+  
 }
 
 .genres a {
@@ -46,7 +47,7 @@
 
 .active-genre {
   background-color: #00bcd4;
-  color: #fff;
+  color: #ce3030;
   border-color: #1295a7; 
 }
 

@@ -13,15 +13,22 @@ const Feature = () => {
           params: {
             api_key: import.meta.env.VITE_TMDB_API_KEY,
             language: 'en-US',
-            page: 4,
+            page: 2,
           },
         });
 
-        setMovies(response.data.results);
+        const aMovies = response.data.results;
+        const shuffle = aMovies.sort(() => 0.5 - Math.random());
+        const randomFive = shuffle.slice(0, 16);
+
+        setMovies(randomFive);
       } catch (error) {
         console.error('Error fetching movies:', error);
       }
     }
+
+
+        
 
     fetchMovies();
   }, []);

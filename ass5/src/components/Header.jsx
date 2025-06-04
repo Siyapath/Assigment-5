@@ -17,7 +17,7 @@ const Header = () => {
 
       <div className="header-buttons">
         {username ? (
-          <p className="welcome">Hi {username}</p>
+          <p className="welcome"></p>
         ) : (
           <>
             <button onClick={() => navigate('/login')}>Login</button>
